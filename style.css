@@ -1,0 +1,60 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: green;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header input,
+button {
+  padding: 0.5rem;
+}
+
+section {
+  margin: 0 1rem;
+  margin-top: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+.grid img {
+  width: 100%;
+  filter: drop-shadow(0px 10px 3px black);
+  cursor: pointer;
+}
+
+.item-details {
+  margin: 2rem 0;
+}
+.item-details h5 {
+  color: teal;
+  margin-top: 0.5rem;
+}
+
+#myImageID {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-description {
+  max-width: 50%;
+}
