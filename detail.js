@@ -53,6 +53,7 @@ function Movie(poster_path, id) {
   let red = document.getElementById(id);
 
   red.addEventListener("click", () => {
-    window.location = "file:///D:/HTML%20CSS/Movie/detail.html?movieId=" + id;
+    window.location =
+      "file:///D:/HTML%20CSS/Movie-API/detail.html?movieId=" + id;
   });
 }
