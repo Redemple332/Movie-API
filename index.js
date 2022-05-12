@@ -80,14 +80,14 @@ function Movie(poster_path, id) {
 function movieDetail() {}
 
 function searhMovies() {
-  let search = document.querySelector("#search").value;
   document.getElementById("movies").innerHTML = "";
+  let search = document.querySelector("#search").value;
 
   //Search for movies API
   axios.get(`${searchUrl}${search}`).then((res) => {
     data = res.data.results;
     data.map((item) => {
-      Movie(item.poster_path);
+      Movie(item.poster_path, item.id);
     });
   });
 }

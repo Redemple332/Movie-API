@@ -1,6 +1,7 @@
 var link = window.location.href;
 var newLink = new URL(link);
 const movieId = newLink.searchParams.get("movieId");
+
 const apiKey = "1bfdbff05c2698dc917dd28c08d41096";
 const detailMovie =
   "https://api.themoviedb.org/3/movie/" +
